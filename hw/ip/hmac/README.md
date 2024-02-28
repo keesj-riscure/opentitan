@@ -53,7 +53,7 @@ wipe internal variables such as the secret key, intermediate hash results
 H, digest and the message FIFO. It does not wipe the software accessible 16x32b FIFO.
 The software can wipe the variables by writing a 32-bit random value into
 [`WIPE_SECRET`](doc/registers.md#wipe_secret) register. The internal variables will be reset to the written
-value. This version of the HMAC doesn't have a internal pseudo-random number
+value. This version of the HMAC doesn't have an internal pseudo-random number
 generator to derive the random number from the written seed number.
 
 A later update may provide an interface for external hardware IPs, such as a key
